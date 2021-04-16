@@ -24,21 +24,3 @@ jobs:
           run: mvn -B clean package --file pom.xml
         - name: Maven verify
           run: mvb -B clean verify
-  docker:
-    name: Publish - Docker Hub
-    runs-on: ubuntu-latest
-    env:
-      REPO: ${{ secrets.DOCKER_REPO }}
-
-    steps:
-      - uses: actions/checkout@v3
-      - name: Set up JDK 8
-        uses: actions/setup-java@v3
-        with:
-          java-version: 8
-      - name: Login to Docker Hub
-        run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASS }}
-      - name: Build Docker image
-        run: docker build -t $REPO:latest -t $REPO:${GITHUB_SHA::8} .
-      - name: Publish Docker image
-        run: docker push $REPO
