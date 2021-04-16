@@ -3,4 +3,4 @@
 
 ## It has implemented github action for CI.
 
-# The workflow to build the app and then build the docker image and push it to docker repository
+### The workflow to build the app and then build the docker image and push it to docker repository
