@@ -1,4 +1,7 @@
 ![ Maven-Docker-Build](https://github.com/AmeenKibria/ghahello/actions/workflows/maven.yml/badge.svg)
+![ Maven-Docker-Build](https://github.com/AmeenKibria/ghahello/actions/workflows/pr.yml/badge.svg)
+
+
 
 
 #### This is simple spring boot hello world application wich is maven build.
