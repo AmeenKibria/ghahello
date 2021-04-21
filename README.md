@@ -1,6 +1,9 @@
-## This is simple spring boot hello world application wich is maven build.
+[![YourActionName Actions Status](https://github.com/AmeenKibria/ghahello/workflows/maven/badge.svg)]
 
 
-## It has implemented github action for CI.
+#### This is simple spring boot hello world application wich is maven build.
 
-### The workflow to build the app and then build the docker image and push it to docker repository
+
+### It has implemented github action for CI.
+
+####### The workflow to build the app and then build the docker image and push it to docker repository
