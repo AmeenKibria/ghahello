@@ -1,4 +1,4 @@
-[![YourActionName Actions Status](https://github.com/AmeenKibria/ghahello/workflows/maven/badge.svg)](https://github.com/AmeenKibria/ghahello/actions)
+[![YourActionName Actions Status](https://github.com/AmeenKibria/ghahello/workflows/Maven-Docker-Build/badge.svg)](https://github.com/AmeenKibria/ghahello/actions)
 
 
 #### This is simple spring boot hello world application wich is maven build.
