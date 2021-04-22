@@ -1,5 +1,4 @@
-![ Maven-Docker-Build](https://github.com/AmeenKibria/ghahello/actions/workflows/maven.yml/badge.svg)
-![ Maven-Docker-Build](https://github.com/AmeenKibria/ghahello/actions/workflows/pr.yml/badge.svg)
+![ Maven-Docker-Build](https://github.com/AmeenKibria/ghahello/actions/workflows/production.yaml/badge.svg)
 
 
 
