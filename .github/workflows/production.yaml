@@ -61,15 +61,4 @@ jobs:
           build-args: |
             COMMIT_SHA=${{ github.sha }}
 
-      - name: Create tag
-        if: success()
-        uses: actions/github-script@v3
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            github.git.createRef({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              ref: "refs/tags/${{ github.event.inputs.tag }}",
-              sha: context.sha
-            })
+    
