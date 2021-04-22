@@ -44,7 +44,7 @@ jobs:
         uses: crazy-max/ghaction-docker-meta@v2
         with:
           images: ameendocker/testapp
-          ttag-custom-only: true
+          tag-custom-only: true
           tag-custom: |
             ${{ github.event.inputs.tag }}
           label-custom: |
@@ -61,7 +61,7 @@ jobs:
           labels: ${{ steps.docker_meta.outputs.labels }}
           build-args: |
             COMMIT_SHA=${{ github.sha }}
-            
+
       - name: Create tag
         if: success()
         uses: actions/github-script@v3
