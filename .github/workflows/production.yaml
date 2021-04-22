@@ -1,16 +1,12 @@
-
-name: workflow-dispatch
+name: Learning Tagging 
 
 on:
   workflow_dispatch:
     inputs:
-      time_window:
-        description: 'Job Time Range'
+      tag:
+        description: "Tag version (e.g. 1.x.x)"
         required: true
-        default: '--twoDayWindow'
-      manual:
-        description: 'Set this if you are running the job manually.'
-        default: false
+        default: ''
 
 jobs:
   build:
