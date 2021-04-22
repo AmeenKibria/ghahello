@@ -44,10 +44,10 @@ jobs:
         uses: crazy-max/ghaction-docker-meta@v2
         with:
           images: ameendocker/testapp
-          tag-custom-only: true
-          tag-custom: |
+          tags: true
+          tags: |
             ${{ github.event.inputs.tag }}
-          label-custom: |
+          labels: |
             org.opencontainers.image.authors=test/ASPA
             org.opencontainers.image.vendor=jyu
 
