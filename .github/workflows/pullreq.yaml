@@ -31,6 +31,7 @@ jobs:
       - name: Build with Maven
         id: build
         run: mvn -B package --file pom.xml
+      - run: mvn -s pom.xml clean package verify -DreleaseTesting --no-transfer-progress --batch-mode
       
       - name: Archive build logs
         id: archive-logs
